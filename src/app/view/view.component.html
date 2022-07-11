@@ -1,0 +1,27 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Airline Name</th>
+        <th>Flight Number</th>
+        <th>From place</th>
+        <th>To place</th>
+        <th>Total seats</th>
+        <th>Price</th>
+        <th>Meal</th>
+        <th>airline Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flightdetails">
+  <td>{{flight.airlinename}}</td>
+  <td>{{flight.flightnumber}}</td>
+  <td>{{flight.fromplace}}</td>
+  <td>{{flight.toPlace}}</td>
+  <td>{{flight.totalSeats}}</td>
+  <td>{{flight.price}}</td>
+  <td>{{flight.meal}}</td>
+  <td>{{flight.airlinestatus}}</td>
+  <!-- <td><button (click)="blockUnblock(flight.id)">Block/Unblock</button></td> -->
+      </tr>
+    </tbody>
+  </table>

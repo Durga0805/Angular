@@ -1,0 +1,107 @@
+
+<form [formGroup]="flightinfo" (ngSubmit)="submitDetals()">
+   
+    <table border="1" > 
+       <tr>        
+    <td><label>Airline Name</label></td>
+    <td><label>Airline Status</label></td>
+        </tr>
+        <tr>
+   <td><input type=text placeholder="Name of Airline" class="form-control" formControlName="airlineName"></td> 
+   <td><input type=text placeholder="Airline status" formControlName="airlinestatus" ></td>
+</tr>
+<tr>
+    <td><label>Flight Number</label></td>
+    <td><label>From</label></td>
+    </tr>    <tr>
+        <td>
+        <input type=text placeholder="Add Flight Number" formControlName="flightNumber" >
+        </td>
+        <td>
+        <input type=text placeholder="Add From place" name="fromplace" formControlName="fromplace">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <label>To</label>
+        </td>
+        <td>
+        <label>Start Date</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <input type=text placeholder="Add To place" formControlName="toplace" ><br>  
+        </td>
+        <td>
+        <input type=date formControlName="strdate" >  
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>End Date</label>
+        </td>
+        <td>
+            <label>Departure Time</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+         <input type=date formControlName="enddate" >
+        </td>
+        <td>
+            <input type=time formControlName="strtime" >
+        </td>
+    </tr>
+   <tr>
+       <td>
+        <label>Arrival Time</label>
+       </td>
+       <td>
+        <label>Number of Business class seats</label>
+       </td>
+   </tr>
+   <tr>
+       <td>
+        <input type=time formControlName="endtime" >
+       </td>
+       <td>
+        <input type=text  formControlName="noOfBClassSeats" >
+       </td>
+   </tr>
+   <tr>
+       <td>
+        <label>Number of NonBusiness class seats</label>
+       </td>
+       <td>
+        <label>Total seats</label>
+       </td>
+   </tr>
+    <tr>
+        <td>
+         <input type=text formControlName="noOfNonBClassSeats"  >
+        </td>
+        <td>
+            <input type=text formControlName="totalseats" >
+        </td>
+    </tr>
+   <tr>
+       <td>
+        <label>Price</label>
+       </td>
+       <td>
+        <label>Meal</label>
+       </td>
+   </tr>
+    <tr>
+        <td>
+            <input type=text formControlName="price" >
+        </td>
+        <td>
+            <input type=text formControlName="meal" >
+        </td>
+    </tr>  
+</table>
+<button type="submit" >Submit</button>
+</form>
+
